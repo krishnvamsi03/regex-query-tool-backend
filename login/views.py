@@ -5,10 +5,7 @@ from rest_framework.decorators import api_view
 from .serializers import LoginSerializer, SignUpSerializer, GetSavedRegexSerializer, GetUserName, AuthTokenSerializer
 from .models import userDetails, language, regex, savedRegex, authToken
 
-# Create your views here.
-# class LoginView(viewsets.ModelViewSet):
-#     serializer_class = LoginSerializer
-#     queryset = userDetails.objects.all()
+
 @api_view(['POST', ])
 def login_view(request):
     if request.method == 'POST':
@@ -42,7 +39,7 @@ def signup_view(request):
                 data['token'] = token.key
             except:
                 data = serializer.delete()
-                
+
         else:
             data = serializer.errors
         return Response(data)
