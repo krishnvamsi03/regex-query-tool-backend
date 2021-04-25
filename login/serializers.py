@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import userDetails, savedRegex, regex, language, authToken
+from .models import userDetails, savedRegex, regex, languageSC, authToken
 import uuid
 
 
@@ -64,3 +64,14 @@ class GetUserName(serializers.ModelSerializer):
     class Meta:
         model = userDetails
         fields = ('username',)
+
+
+class SaveRegexSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = regex
+        fields = ('regexName', 'regexPattern')
+
+class DeleteRegexSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = savedRegex
+        fields = ('savedRegexId', )

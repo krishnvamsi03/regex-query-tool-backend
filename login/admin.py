@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import userDetails, language, regex, savedRegex, authToken
+from .models import userDetails, languageSC, regex, savedRegex, authToken
 # Register your models here.
 
 
@@ -25,7 +25,7 @@ class authTokenAdmin(admin.ModelAdmin):
 
 
 admin.site.register(userDetails, userDetailsAdmin)
-admin.site.register(language, languageAdmin)
+admin.site.register(languageSC, languageAdmin)
 admin.site.register(regex, regexAdmin)
 admin.site.register(savedRegex, savedRegexAdmin)
 admin.site.register(authToken, authTokenAdmin)

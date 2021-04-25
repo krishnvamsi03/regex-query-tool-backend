@@ -24,7 +24,7 @@ class userDetails(models.Model):
         return self.username
 
 
-class language(models.Model):
+class languageSC(models.Model):
     languageId = models.UUIDField(
         primary_key=uuid.uuid4, default=uuid.uuid4, editable=False)
     languageName = models.CharField(max_length=50)
@@ -39,7 +39,7 @@ class regex(models.Model):
     regexName = models.CharField(max_length=100)
     regexPattern = models.CharField(max_length=100)
     regexLanguage = models.ForeignKey(
-        to=language, on_delete=models.SET_NULL, null=True)
+        to=languageSC, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.regexName
