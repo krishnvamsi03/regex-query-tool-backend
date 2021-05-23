@@ -131,7 +131,7 @@ def save_regex_view(request):
                         save = savedRegex(userId=user,
                                           regexId=regexValue)
                         save.save()
-                        data["response"] = "saved successfully"
+                        data["response"] = "Saved successfully"
                     except:
                         regexValue.delete()
                         data["response"] = "Something went wrong! please try again"
