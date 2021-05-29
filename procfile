@@ -1,0 +1,1 @@
+web: gunicorn regex-query-tool-backend.wsgi --log-file -
