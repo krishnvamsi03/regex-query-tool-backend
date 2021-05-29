@@ -1,2 +1,2 @@
 *.sqlite
-regeztool/settings.py
+*settings.py
