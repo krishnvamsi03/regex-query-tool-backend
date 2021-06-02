@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '793xxistm-n=&^@dta22hy@8+k4=c^(3)uxv6_^5oy6mh#nctq'
+SECRET_KEY = '******************************'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'regeztool.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dcqubv6oggmiid',
-        'USER': 'kezaydmupadnuz',
-        'PASSWORD': '3ea448d0564e2c12f363d9e1706ca7fe929ef191f39b87f9af4a1bfe1bb49335',
-        'HOST': 'ec2-3-233-43-103.compute-1.amazonaws.com',
+        'NAME': '*********',
+        'USER': '********',
+        'PASSWORD': '******************',
+        'HOST': '***********',
         'PORT': '5432',
     },
 }
